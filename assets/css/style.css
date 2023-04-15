@@ -597,9 +597,6 @@ img {
 /* qualification */
 
 
-
-
-
 .qualification__tabs{
   display: flex;
   justify-content: space-evenly;
@@ -1278,7 +1275,7 @@ img {
   }
 
   .qualification__tabs{
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .qualification__button{
