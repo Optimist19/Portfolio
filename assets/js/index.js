@@ -50,24 +50,63 @@ skillsHeader.forEach((el) =>{
 })
 
 
-const tabs = document.querySelectorAll('[data-target]')
-const tabContents = document.querySelectorAll('[data-content]')
+		// qualification
 
-tabs.forEach(tab =>{
-	tab.addEventListener('click', () =>{
-		const target = document.querySelector(tab.dataset.target)
+// const tabs = document.querySelectorAll('[data-target]'),
+// tabContents= document.querySelectorAll('[data-content]')
 
-		tabContents.forEach(tabContent =>{
-			tabContent.classList.remove('qualification__active')
-		})
-		target.classList.add('qualification__active')
+// tabs.forEach(tab =>{
+// 	tab.addEventListener('click', () =>{
+// 		const target = document.querySelector(tab.dataset.target)
 
-		tabs.forEach(tab =>{
-			tab.classList.remove('qualification__active')
-		})
-		tab.classList.add('qualification__active')
-	})
+// 		tabContents.forEach(tabContent =>{
+// 			tabContent.classList.remove('qualification__active')
+// 		})
+// 		target.classList.add('qualification__active')
+
+// 		tabs.forEach(tab =>{
+// 			tab.classList.remove('qualification__active')
+// 		})
+// 		tab.classList.add('qualification__active')
+
+
+// 	})
+// })
+
+
+// The code aboven above didn't work, so i tried another code yo achieve the one above and it worked. The code is below
+
+
+
+const educationHandler = document.getElementById("educationHandler");
+const workHandler = document.getElementById("workHandler");
+const education = document.getElementById("education");
+const work = document.getElementById("work");
+
+
+
+educationHandler.addEventListener('click', function(){
+	education.style.display = 'block';
+	work.style.display = 'none'
+
 })
+workHandler.addEventListener('click', function(){
+	
+	education.style.display = "none";
+	
+	work.style.display = "block";
+})
+console.log(work)
+
+window.addEventListener('load', function(){
+	work.style.display = 'none'
+})
+
+
+
+
+
+
 
 
 // services modal
