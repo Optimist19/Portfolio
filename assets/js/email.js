@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 const contactForm = document.querySelector("#contact-form")
 const submitBtn = document.querySelector(".submit-btn")
 const nameInput = document.querySelector("#user_name")
@@ -20,7 +12,7 @@ emailjs.init(publickKey)
 
 contactForm.addEventListener("submit", e =>{
 	e.preventDefault();
-	submitBtn.innerText = "Just a moment..."
+	// submitBtn.innerText = "Just a moment..."
 
 	const inputFields = {
 		name: nameInput.value,
@@ -28,18 +20,23 @@ contactForm.addEventListener("submit", e =>{
 		message: messageInput.value
 	}
 
-	emailjs.send(serviceID, templateID, inputFields)
-	.then(()=>{
-		// submitBtn.innerText = "Message sent successfully"
-		nameInput.value = ""
-		emailInput.value = ""
-		messageInput.value = ""
-		success()
-	}, (error) =>{
-		console.log(error)
-		// submitBtn.innerText = "Something went wrong"
-		error()
-	})
+	if(nameInput.value == "" || emailInput.value == "" || messageInput.value == ""){
+		return  warning()
+	}else{
+		emailjs.send(serviceID, templateID, inputFields)
+		.then(()=>{
+			// submitBtn.innerText = "Message sent successfully"
+			nameInput.value = ""
+			emailInput.value = ""
+			messageInput.value = ""
+			success()
+		}, (error) =>{
+			console.log(error)
+			// submitBtn.innerText = "Something went wrong"
+			error()
+		})
+	}
+
 	
 })
 
@@ -58,5 +55,13 @@ function error(){
 		title: "oooops",
 		icon: "error",
 		text: "Something went wrong"
+	});
+}
+
+function warning(){
+	swal({
+		title: "Inputs are required",
+		icon: "warning",
+		text: "Fill in properly"
 	});
 }
