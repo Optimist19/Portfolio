@@ -637,6 +637,10 @@ img {
   color: var(--text-color-light);
 }
 
+.spc-btw-proj{
+  margin-bottom: 4vh;
+}
+
 .qualification__rounder{
   display: inline-block;
   width: 13px;
@@ -652,6 +656,7 @@ img {
   background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
+
 
 
 
