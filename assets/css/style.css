@@ -460,6 +460,7 @@ img {
   padding: 0.5vh 0;
 }
 
+
 .about__info{
   display: flex;
   justify-content: space-evenly;
@@ -642,8 +643,9 @@ img {
 }
 
 .spc-btw-proj{
-  margin-bottom: 4vh;
+  padding-bottom: 6vh;
 }
+
 
 .qualification__rounder{
   display: inline-block;
