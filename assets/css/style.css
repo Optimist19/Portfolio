@@ -452,8 +452,12 @@ img {
 }
 
 .about__description{
-  text-align: center;
+  text-align: right;
   margin-bottom: var(--mb-2-5);
+}
+
+.about__description p{
+  padding: 0.5vh 0;
 }
 
 .about__info{
