@@ -452,7 +452,7 @@ img {
 }
 
 .about__description{
-  text-align: right;
+  text-align: justify;
   margin-bottom: var(--mb-2-5);
 }
 
