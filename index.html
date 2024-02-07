@@ -1,496 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-	<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="icon" type="image/x-icon" href="https://cdn2.vectorstock.com/i/1000x1000/50/96/graffiti-code-word-sprayed-in-black-over-white-vector-31885096.jpg">
-	<title>Oluwasegun</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn2.vectorstock.com/i/1000x1000/50/96/graffiti-code-word-sprayed-in-black-over-white-vector-31885096.jpg"
+    />
+    <title>Oluwasegun</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Oluwasegun</a>
 
-	<header class="header" id="header">
-		<nav class="nav container">
-			<a href="#" class="nav__logo">Oluwasegun</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Contact Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- theme -->
 
-			<div class="nav__menu" id="nav-menu">
-				<ul class="nav__list grid">
-					<li class="nav__item">
-						<a href="#home" class="nav__link active-link">
-							<i class="uil uil-estate nav__icon"></i>Home
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#about" class="nav__link">
-							<i class="uil uil-user nav__icon"></i>About
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#skills" class="nav__link">
-							<i class="uil uil-file-alt nav__icon"></i>Skills
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#portfolio" class="nav__link">
-							<i class="uil uil-scenery nav__icon"></i>portfolio
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#contact" class="nav__link">
-							<i class="uil uil-message nav__icon"></i>Contact Me
-						</a>
-					</li>
-				</ul>
-				<i class="uil uil-times nav__close" id="nav-close"></i>
-			</div>
-			<div class="nav__btns">
-				<!-- theme -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-				<i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-				<div class="nav__toggle" id="nav-toggle">
-					<i class="uil uil-apps"></i>
-				</div>
-			</div>
-		</nav>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/oluwasegun-bamidele/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://twitter.com/optimist_BGO"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/Optimist19"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <img src="assets/img/DSC_9774.JPG" alt="" class="home_pic" />
+            </div>
 
-	</header>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I am <span class="typing"></span></h1>
+              <h3 class="home__subtitle">Frontend Developer</h3>
+              <p class="description">I love building impactful products.</p>
+              <a href="#contact" class="button button--flex contact">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
 
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name"> Scroll down </span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-	<main class="main">
-		<section class="home section" id="home">
-			<div class="home__container container grid">
-				<div class="home__content grid">
-					<div class="home__social">
-						<a href="https://www.linkedin.com/in/oluwasegun-bamidele/" target="_blank" class="home__social-icon">
-							<i class="uil uil-linkedin-alt"></i>
-						</a>
-						<a href="https://twitter.com/optimist_BGO" target="_blank" class="home__social-icon">
-							<i class="uil uil-twitter"></i>
-						</a>
-						<a href="https://github.com/Optimist19" target="_blank" class="home__social-icon">
-							<i class="uil uil-github-alt"></i>
-						</a>
-					</div>
-					<div class="home__img">
-						<img src="assets/img/DSC_9774.JPG" alt="" class="home_pic">
-					</div>
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
 
-					<div class="home__data">
-						<h1 class="home__title">
-							Hi, I am <span class="typing"></span>
-						</h1>
-						<h3 class="home__subtitle">
-							Frontend Developer
-						</h3>
-						<p class="description">
-							I love building impactful products.
-						</p>
-						<a href="#contact" class="button button--flex contact">
-							Contact Me <i class="uil uil-message button__icon"></i>
-						</a>
-					</div>
-				</div>
+        <div class="about__container container grid">
+          <img src="./assets/img/Dsc9771.jpg" alt="" class="about__img" />
 
+          <div class="about__data">
+            <div class="about__description">
+              <p>
+                I am a passionate frontend developer who is eager to take on my
+                first full-time engineering role.
+              </p>
+              <p>
+                I am skilled in HTML, CSS, Javascript and VueJs, ReactJs. I also
+                enjoy learning new technologies and open to picking new skills.
+              </p>
+              <p>
+                In addition to my technical skills of building high-quality,
+                responsive, and accessible websites, I am an excellent
+                communicator and collaborator who values teamwork.
+              </p>
+              <p>
+                I am detail-oriented developer who understands the importance of
+                creating user-friendly and visually appealing interfaces for
+                product users.
+              </p>
+              <p>
+                I am excited to apply my skills and knowledge to foster the
+                growth of any dynamic and innovative-oriented company.
+              </p>
+            </div>
 
-				<div class="home__scroll">
-					<a href="#about" class="home__scroll-button button--flex">
-						<i class="uil uil-mouse-alt home__scroll-mouse"></i>
-						<span class="home__scroll-name">
-							Scroll down
-						</span>
-						<i class="uil uil-arrow-down home__scroll-arrow" ></i>
-					</a>
-				</div>
-			</div>
-		</section>
-
-
-		<section class="about section" id="about">
-			<h2 class="section__title">About Me</h2>
-			<span class="section__subtitle">My introduction</span>
-
-			
-			<div class="about__container container grid">
-				<img src="./assets/img/Dsc9771.jpg" alt="" class="about__img">
-
-				<div class="about__data">
-					<div class="about__description">
-						<p>
-							I am a passionate frontend developer who is eager to take
-							on my first full-time engineering role.
-						</p>
-						<p>
-							I am skilled in HTML, CSS, Javascript and VueJs, ReactJs.
-							I also enjoy learning new technologies and open to picking new skills.
-						</p>
-						<p>
-							In addition to my technical skills of building high-quality, responsive, and accessible websites, 
-							I am an excellent communicator and collaborator who values teamwork.
-						</p>
-						<p>
-							I am detail-oriented developer who understands the importance of creating user-friendly and visually appealing interfaces for product users.
-						</p>
-						<p>
-							I am excited to apply my skills and knowledge to foster the growth of any dynamic and innovative-oriented company. 
-						</p>
-					</div>
-
-					<div class="about__buttons">
-						<!-- <a download href="https://rb.gy/6jfjk" class="button button--flex download_left">
+            <div class="about__buttons">
+              <!-- <a download href="https://rb.gy/6jfjk" class="button button--flex download_left">
 							Download CV<i class="uil uil-download-alt button__icon"></i>
 						</a> -->
-						<a href="https://docs.google.com/document/d/1oNYCtj3jj6xWrl0Y4x4z-3Cw4kUAQNY-/edit" target="_blank" class="button button--flex view_right">
-							View CV
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+              <a
+                href="https://docs.google.com/document/d/1oNYCtj3jj6xWrl0Y4x4z-3Cw4kUAQNY-/edit"
+                target="_blank"
+                class="button button--flex view_right"
+              >
+                View CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		
-		<section class="skills section" id="skills">
-			<h2 class="section__title">Skills</h2>
-			<span class="section__subtitle">My technical level</span>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
 
-			<div class="skills__container container">
-				<div>
-					<div class="skills__content skills__open">
-						<div class="skills__header">
-							<i class="uil uil-brackets-curly skills__icon"></i>
-							<div>
-								<h1 class="skills__title">Frontend Developer</h1>
-								<span class="skills__subtitle">1 year</span>
-							</div>
-							<i class="uil uil-angle-down skills__arrow"></i>
-						</div>
-						<div class="skills__list grid">
-							<div class="skills__data">
-								<div class="skills__titles">
-									<h3 class="skills__name">HTML</h3>
-									<span class="skills__number">
-										90%
-									</span>
-								</div>
-								<div class="skills__bar">
-									<span class="skills__percentage skills__html"></span>
-								</div>
-							</div>
-							<div class="skills__data">
-								<div class="skills__titles">
-									<h3 class="skills__name">CSS</h3>
-									<span class="skills__number">
-										80%
-									</span>
-								</div>
-								<div class="skills__bar">
-									<span class="skills__percentage skills__css"></span>
-								</div>
-							</div>
-							<div class="skills__data">
-								<div class="skills__titles">
-									<h3 class="skills__name">Javascript</h3>
-									<span class="skills__number">
-										75%
-									</span>
-								</div>
-								<div class="skills__bar">
-									<span class="skills__percentage skills__js"></span>
-								</div>
-							</div>
-							<div class="skills__data">
-								<div class="skills__titles">
-									<h3 class="skills__name">Vue</h3>
-									<span class="skills__number">
-										70%
-									</span>
-								</div>
-								<div class="skills__bar">
-									<span class="skills__percentage skills__vue"></span>
-								</div>
-							</div>
-							<div class="skills__data">
-								<div class="skills__titles">
-									<h3 class="skills__name">React</h3>
-									<span class="skills__number">
-										70%
-									</span>
-								</div>
-								<div class="skills__bar">
-									<span class="skills__percentage skills__vue"></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="skills__container container">
+          <div>
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Frontend Developer</h1>
+                  <span class="skills__subtitle">1 year</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number"> 90% </span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number"> 80% </span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills__number"> 75% </span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Vue</h3>
+                    <span class="skills__number"> 70% </span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__vue"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number"> 70% </span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__vue"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- QUALIFICATION -->
 
-		<!-- QUALIFICATION -->
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
 
-		<section class="qualification section">
-			<h2 class="section__title">Qualification</h2>
-			<span class="section__subtitle">My personal journey</span>
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+              id="educationHandler"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
 
-			<div class="qualification__container container">
-				<div class="qualification__tabs">
-					<div class="qualification__button button--flex qualification__active" data-target='#education' id="educationHandler">
-						<i class="uil uil-graduation-cap qualification__icon"></i>
-						Education
-					</div>
+            <div
+              class="qualification__button button--flex"
+              data-target="#work"
+              id="workHandler"
+            >
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
+          </div>
 
-					<div class="qualification__button button--flex" data-target="#work" id="workHandler">
-						<i class="uil uil-briefcase-alt qualification__icon"></i>
-						Work
-					</div>
-				</div>
+          <div class="qualification__sections">
+            <!-- Qualification skills__content 1 -->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!-- Qualification 1 -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Software Development</h3>
+                  <span class="qualification__subtitle">AltschoolAfrica</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    March 2022 - April 2023
+                  </div>
+                </div>
+              </div>
 
-				<div class="qualification__sections">
-					<!-- Qualification skills__content 1 -->
-					<div class="qualification__content qualification__active" data-content id="education">
-						<!-- Qualification 1 -->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title">Software Development</h3>
-								<span class="qualification__subtitle">AltschoolAfrica</span>
-								<div class="qualification__calendar">
-									<i class="uil uil-calendar-alt"></i>
-									March 2022 - April 2023
-								</div>
-							</div>
-						</div>
+              <!-- Qualification 2 -->
+              <div class="qualification__data">
+                <div></div>
 
-						<!-- Qualification 2 -->
-						<div class="qualification__data">
-							<div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
+                <div>
+                  <h3 class="qualification__title">HTML Essential Training</h3>
+                  <span class="qualification__subtitle">LinkedIn</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022
+                  </div>
+                </div>
+              </div>
 
-							<div>
-								<h3 class="qualification__title">HTML Essential Training</h3>
-								<span class="qualification__subtitle">LinkedIn</span>
-								<div class="qualification__calendar">
-									<i class="uil uil-calendar-alt"></i>
-									2022
-								</div>
-							</div>
-						</div>
+              <!-- Qualification 3 -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">CSS Essential Training</h3>
+                  <span class="qualification__subtitle">LinkedIn</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022
+                  </div>
+                </div>
 
-						<!-- Qualification 3 -->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title">CSS Essential Training</h3>
-								<span class="qualification__subtitle">LinkedIn</span>
-								<div class="qualification__calendar">
-									<i class="uil uil-calendar-alt"></i>
-									2022
-								</div>
-							</div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!-- Qualification 4 -->
+              <div class="qualification__data">
+                <div></div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-						</div>
-						<!-- Qualification 4 -->
-						<div class="qualification__data">
-							<div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<!-- <span class="qualification__line"></span> -->
-							</div>
+                <div>
+                  <h3 class="qualification__title">
+                    Programming Foundations Fundamentals
+                  </h3>
+                  <span class="qualification__subtitle">LinkedIn</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Qualification skills__content 2 -->
+            <div class="qualification__content" data-content id="work">
+              <!-- Qualification 1 -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title spc-btw-proj">
+                    Dribbble Web Application
+                  </h3>
+                </div>
 
-							<div>
-								<h3 class="qualification__title">Programming Foundations Fundamentals</h3>
-								<span class="qualification__subtitle">LinkedIn</span>
-								<div class="qualification__calendar">
-									<i class="uil uil-calendar-alt"></i>
-									2022
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Qualification skills__content 2 -->
-					<div class="qualification__content" data-content id="work">
-						<!-- Qualification 1 -->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title spc-btw-proj">Dribbble Web Application</h3>
-							</div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!-- Qualification 2 -->
+              <div class="qualification__data">
+                <div></div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-						</div>
-						<!-- Qualification 2 -->
-						<div class="qualification__data">
-							<div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line" ></span>
-							</div>
+                <div class="check">
+                  <h3 class="qualification__title spc-btw-proj">
+                    Rallytrade Website
+                  </h3>
+                </div>
+              </div>
+              <!-- Qualification 3 -->
+              <div class="qualification__data">
+                <div class="check">
+                  <h3 class="qualification__title spc-btw-proj">
+                    Predicting-Game
+                  </h3>
+                </div>
 
-							<div class="check">
-								<h3 class="qualification__title spc-btw-proj">Rallytrade Website</h3>
-							</div>
-						</div>
-						<!-- Qualification 3 -->
-						<div class="qualification__data">
-							<div class="check">
-								<h3 class="qualification__title spc-btw-proj">Predicting-Game </h3>
-							</div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-						</div>
+              <!-- Qualification 4 -->
+              <div class="qualification__data">
+                <div></div>
 
-						<!-- Qualification 4 -->
-						<div class="qualification__data">
-							<div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
+                <div class="check">
+                  <h3 class="qualification__title spc-btw-proj">
+                    Youtube Application
+                  </h3>
+                </div>
+              </div>
 
-							<div class="check">
-								<h3 class="qualification__title spc-btw-proj">Youtube Application</h3>
-							</div>
-						</div>
-						
-						<!-- Qualification 5 -->
-						<div class="qualification__data">
-							<div class="check">
-								<h3 class="qualification__title spc-btw-proj">Subjects Quiz</h3>
-							</div>
+              <!-- Qualification 5 -->
+              <div class="qualification__data">
+                <div class="check">
+                  <h3 class="qualification__title spc-btw-proj">
+                    Subjects Quiz
+                  </h3>
+                </div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-						</div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
 
+              <!-- Qualification 6 -->
+              <div class="qualification__data">
+                <div></div>
 
-						<!-- Qualification 6 -->
-						<div class="qualification__data">
-							<div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
 
-							<div>
-								<span class="qualification__rounder"></span>
-								<!-- <span class="qualification__line"></span> -->
-							</div>
+                <div class="check">
+                  <h3 class="qualification__title spc-btw-proj">Note-app</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-							<div class="check">
-								<h3 class="qualification__title spc-btw-proj">Note-app</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+      <!-- portfolio -->
 
-		<!-- portfolio -->
-		
-		<section class="portfolio section" id="portfolio">
-			<h2 class="section__title">Portfolio</h2>
-			<span class="section__subtitle">Most recent work</span>
-			
-			<div class="portfolio__container container swiper-container">
-				<div class="swiper-wrapper">
-					<!-- portfolio 0 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/karefinder.png" alt="" class="portfolio__img">
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">Kare-Finder</h3>
-							<p class="portfolio__description">
-								The purpose of this application is to let users get fast access to the nearest hospital close to them. The app is still in progress
-							</p>
-							<a href="https://kare-finder.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- portfolio 0 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/karefinder.png"
+                alt=""
+                class="portfolio__img"
+              />
 
-					<!-- portfolio 1 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/youtube.png">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Kare-Finder</h3>
+                <p class="portfolio__description">
+                  The purpose of this application is to let users get fast
+                  access to the nearest hospital close to them. The app is still
+                  in progress
+                </p>
+                <a
+                  href="https://kare-finder.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">Youtube</h3>
-							<p class="portfolio__description">
-								This is a Youtube clone. I initially built it using HTML and CSS then later converted it to Vuejs.
-							</p>
-							<a href="https://youtube-vue.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+            <!-- portfolio 1 -->
 
-					<!-- portfolio 2 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/note.png">
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/resort.png" />
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">Note-app</h3>
-							<p class="portfolio__description">
-								The is an App that keeps in your texts for you. It simply serves as a note, which also keeps the date a note is being made.
-							</p>
-							<a href="https://note-take-in-app.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Youtube</h3>
+                <p class="portfolio__description">
+                  This is an application for a resort with just a few
+                  functionalities to hone my skill.
+                </p>
+                <a
+                  href="https://resort-eosin.vercel.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
 
-					<!-- portfolio 3 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/js-game.png" alt="" class="portfolio__img">
+            <!-- portfolio 2 -->
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">Predicting Game App</h3>
-							<p class="portfolio__description">
-								This is a prediction game app. You predict the upcoming number.
-							</p>
-							<a href="https://js-number-prediction.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/youtube.png" />
 
-					<!-- portfolio 4 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/chat.png">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Youtube</h3>
+                <p class="portfolio__description">
+                  This is a Youtube clone. I initially built it using HTML and
+                  CSS then later converted it to Vuejs.
+                </p>
+                <a
+                  href="https://youtube-vue.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">Chat- app</h3>
-							<p class="portfolio__description">
-								This is a social media application, where you can chat with friends, colleagues and family.
-							</p>
-							<a href="https://chat-app-1837cd.netlify.app" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+            <!-- portfolio 3 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/crime-location.png" />
 
-					<!-- <div class="portfolio__content grid swiper-slide">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">crime-location-map</h3>
+                <p class="portfolio__description">
+                  This is a crime scene application, that shows the location of
+                  where a crime was carried out and what crime was committed
+                  when you click on the crime-scene icon on teh map.
+                </p>
+                <a
+                  href="https://crime-map-location.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 4 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/Quiz.png" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Quiz</h3>
+                <p class="portfolio__description">
+                  This is a project that has 3 subjects, each subject has 3
+                  questions, a user get to answer the questions and get scored
+                  immediately.
+                </p>
+                <a
+                  href="http://questions-game-app.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 5 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/note.png" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Note-app</h3>
+                <p class="portfolio__description">
+                  The is an App that keeps in your texts for you. It simply
+                  serves as a note, which also keeps the date a note is being
+                  made.
+                </p>
+                <a
+                  href="https://note-take-in-app.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 6 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/js-game.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Predicting Game App</h3>
+                <p class="portfolio__description">
+                  This is a prediction game app. You predict the upcoming
+                  number.
+                </p>
+                <a
+                  href="https://js-number-prediction.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 7 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/chat.png" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Chat- app</h3>
+                <p class="portfolio__description">
+                  This is a social media application, where you can chat with
+                  friends, colleagues and family.
+                </p>
+                <a
+                  href="https://chat-app-1837cd.netlify.app"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- <div class="portfolio__content grid swiper-slide">
 						<img src="./assets/img/Dribbble.png" alt="" class="portfolio__img">
 
 						<div class="portfolio__data">
@@ -505,221 +631,221 @@
 						</div>
 					</div> -->
 
-					<!-- portfolio 5 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/crime-location.png">
+            <!-- portfolio 8 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/marketing ai.png" />
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">crime-location-map</h3>
-							<p class="portfolio__description">
-								This is a crime scene application, that shows the location of where a crime was carried out and what crime was committed when you click on the crime-scene icon on teh map.
-							</p>
-							<a href="https://crime-map-location.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">AI marketing app</h3>
+                <p class="portfolio__description">
+                  This is a marketing/Advertising application powered by Open
+                  Ai. It is very useful for product personnel. It helps to
+                  easily generate product pitch for nay products. This is a
+                  desktop based app. The demo button leads to my Github.
+                </p>
+                <a
+                  href="https://github.com/Optimist19/AI_marketing"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
 
+            <!-- portfolio 9 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/ask me anything.png" />
 
-					<!-- portfolio 6 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/marketing ai.png">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">My GPT App</h3>
+                <p class="portfolio__description">
+                  This is a chatgpt clone app built on OpenAi api. It is replica
+                  of ChatGPT to some extent. It is built with Vuejs. The demo
+                  button leads to my Github.
+                </p>
+                <a
+                  href="https://github.com/Optimist19/my-gpt"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">AI marketing app</h3>
-							<p class="portfolio__description">
-								This is a marketing/Advertising application powered by Open Ai. It is very useful for product personnel. It helps to easily generate product pitch for nay products. This is a desktop based app. The demo button leads to my Github.
-							</p>
-							<a href="https://github.com/Optimist19/AI_marketing" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+            <!-- portfolio 10 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/Rally-trade.png"
+                alt=""
+                class="portfolio__img"
+              />
 
-					<!-- portfolio 7 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/Quiz.png">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Rallytrade Web Application</h3>
+                <p class="portfolio__description">
+                  This is a clone of Rallytrade website. I built the site with
+                  HTML and CSS. It is exclusively a desktop view app.
+                </p>
+                <a
+                  href="https://my-web-rally-trade.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">Quiz</h3>
-							<p class="portfolio__description">
-								This is a project that has 3 subjects, each subject has 3 questions, a user get to answer the questions and get scored immediately.
-							</p>
-							<a href="http://questions-game-app.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+          <!-- add arrows -->
 
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
 
-					<!-- portfolio 8 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/ask me anything.png">
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">My GPT App</h3>
-							<p class="portfolio__description">
-								This is a chatgpt clone app built on OpenAi api. It is replica of ChatGPT to some extent. It is built with Vuejs. The demo button leads to my Github.
-							</p>
-							<a href="https://github.com/Optimist19/my-gpt" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+      <!-- Contact Me -->
 
-					<!-- portfolio 9 -->
-					<div class="portfolio__content grid swiper-slide">
-						<img src="./assets/img/Rally-trade.png" alt="" class="portfolio__img">
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
 
-						<div class="portfolio__data">
-							<h3 class="portfolio__title">Rallytrade Web Application</h3>
-							<p class="portfolio__description">
-								This is a clone of Rallytrade website. I built the site with HTML and CSS. It is exclusively a desktop view app.
-							</p>
-							<a href="https://my-web-rally-trade.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-								Demo
-								<i class="uil uil-arrow-right button__icon"></i>
-							</a>
-						</div>
-					</div>
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
 
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitile"
+                  >Oluwasegunbamidele3@gmail.com</span
+                >
+              </div>
+            </div>
+          </div>
 
-				</div>
-					
-				<!-- add arrows -->
-				
-				<div class="swiper-button-next">
-					<i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-				</div>
-				<div class="swiper-button-prev">
-					<i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-				</div>
-				
-				
-				<div class="swiper-pagination"></div>
-			</div>
-		</section>
+          <form class="contact__form grid" id="contact-form">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="user_name" class="contact__label">Name</label>
+                <input
+                  type="text"
+                  id="user_name"
+                  name="user_name"
+                  class="contact__input"
+                />
+              </div>
 
+              <div class="contact__content">
+                <label for="user_email" class="contact__label">Email</label>
+                <input
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  class="contact__input"
+                />
+              </div>
+            </div>
 
+            <div class="contact__content">
+              <label for="message" class="contact__label">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
 
-		<!-- Contact Me -->
+            <div>
+              <button type="submit" class="submit-btn button button--flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
-		<section class="contact section" id="contact">
-			<h2 class="section__title">Contact Me</h2>
-			<span class="section__subtitle">Get in touch</span>
+    <!-- footer -->
 
-			<div class="contact__container container grid">
-				<div>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Oluwasegun</h1>
+            <span class="footer__subtitle">Frontend developer</span>
+          </div>
 
-					<div class="contact__information">
-						<i class="uil uil-envelope contact__icon"></i>
-
-						<div>
-							<h3 class="contact__title">Email</h3>
-							<span class="contact__subtitile">Oluwasegunbamidele3@gmail.com</span>
-						</div>
-					</div>
-				</div>
-
-				
-				
-				
-				<form class="contact__form grid" id="contact-form">
-					<div class="contact__inputs grid">
-						<div class="contact__content">
-							<label for="user_name" class="contact__label">Name</label>
-							<input type="text" id="user_name" name="user_name"  class="contact__input">
-						</div>
-
-						<div class="contact__content">
-							<label for="user_email" class="contact__label">Email</label>
-							<input type="email" id="user_email" name="user_email" class="contact__input">
-						</div>
-					</div>
-					
-					<div class="contact__content">
-						<label for="message" class="contact__label">Message</label>
-						<textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
-					</div>
-
-					<div>
-						<button type="submit" class="submit-btn button button--flex">
-							Send Message
-							<i class="uil uil-message button__icon"></i>
-						</button>
-					</div>
-				</form>
-			</div>
-		</section>
-		
-	</main>
-
-	<!-- footer -->
-
-	<footer class="footer">
-		<div class="footer__bg">
-			<div class="footer__container container grid">
-				<div>
-					<h1 class="footer__title">Oluwasegun</h1>
-					<span class="footer__subtitle">Frontend developer</span>
-				</div>
-
-
-				<ul class="footer__links">
-					<!-- <li>
+          <ul class="footer__links">
+            <!-- <li>
 						<a href="#services" class="footer__link">Services</a>
 					</li> -->
-					<li>
-						<a href="#portfolio" class="footer__link">Portfolio</a>
-					</li>
-					<li>
-						<a href="#contact" class="footer__link">Contact Me</a>
-					</li>
-				</ul>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact Me</a>
+            </li>
+          </ul>
 
-				<div class="footer__socials">
-					<a href="https://www.linkedin.com/in/oluwasegun-bamidele/" target="_blank" class="footer__social">
-						<i class="uil uil-linkedin-alt"></i>
-					</a>
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/oluwasegun-bamidele/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
 
-					<a href="https://twitter.com/optimist_BGO" target="_blank" class="footer__social">
-						<i class="uil uil-twitter-alt"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+            <a
+              href="https://twitter.com/optimist_BGO"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-	<!-- scroll top -->
+    <!-- scroll top -->
 
-	<a href="#" class="scrollup" id="scroll-up">
-		<i class="uil uil-arrow-up scrollup__icon"></i>
-	</a>
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-	<!-- sweetalert -->
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
-	
-	<script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 
-	
-	<script src="./assets/js/index.js"></script>
-
-	
-	<!-- emailjs -->
-	<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-	</script>
-	<script type="text/javascript">
-		(function(){
-		   emailjs.init("YOUR_PUBLIC_KEY");
-		})();
-	 </script>
-	<script src="./assets/js/email.js"></script>
-</body>
+    <!-- emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YOUR_PUBLIC_KEY");
+      })();
+    </script>
+    <script src="./assets/js/email.js"></script>
+  </body>
 </html>
